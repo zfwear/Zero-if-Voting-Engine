@@ -1,2 +1,9 @@
 # Zero-if-Voting-Engine
-ZiV：无分支纯数学防刷评分引擎。核心逻辑由我主导，AI辅助工程。用平滑函数替代if-else，拒绝黑盒，普通人也能看懂逻辑。早期阶段暂未发现问题，欢迎测试。 ZiV: A branchless pure math anti-spam engine. Logic by me, AI-assisted. Smooth functions replace if-else. No black box; intuitive for anyone. Early stage, no issues yet. Feedback welcome.
+A Branchless, Pure Mathematical Anti-Manipulation Scoring Engine.
+Not only for voting.
+
+ZiV 是一个处于早期探索阶段的无分支、零状态纯数学评分模型。
+
+在许多现有的防操纵（如防刷票、防刷单）系统中，通常倾向于使用 if-else 规则树来进行阈值判断。这种方式有时会导致分数断崖式下跌。ZiV 尝试了一种不同的思路：它没有使用条件分支，而是利用绝对值与分式渐近线构建了一个相对平滑的评分曲面，试图将惩罚与奖励转化为连续的数学函数。
+
+相比于难以解释的黑盒模型，ZiV 尝试保持了较好的可解释性，其设计逻辑（如“限制单一来源占比，鼓励广泛分布”）比较贴近直觉。目前，我正尝试将其应用于投票场景，并认为它有潜力探索至电商评价、内容热榜或 DAO 治理等更多场景，但尚未经过大规模真实数据的全面检验。
